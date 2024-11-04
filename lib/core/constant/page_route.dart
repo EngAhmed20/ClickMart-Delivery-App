@@ -14,7 +14,7 @@ import '../../view/auth/widget/verify_code.dart';
 import '../../view/root_home/root_home.dart';
 import 'app_string.dart';
 List<GetPage<dynamic>>? pageRoutes=[
-  GetPage(name: '/', page:()=>LangView(),),
+  GetPage(name: '/', page:()=>LangView(),middlewares: [AppMiddleWare()]),
   GetPage(name: '/login', page:()=>LoginScr()),
   GetPage(name: '/forgetPass', page: ()=>ForgetPassScr()),
 GetPage(name: '/resetPass', page:()=>ResetPassScr()) ,

@@ -56,7 +56,7 @@ class ForgetPassScr extends StatelessWidget {
                         return validInput(val!,5,100,"email");
                       },
                       suffixIcon: Icons.email_outlined,
-                      controller: controller.emailController,
+                      controller: controller.emailController!,
                       hint: 'Enter your email'),
                   const SizedBox(
                     height: 25,

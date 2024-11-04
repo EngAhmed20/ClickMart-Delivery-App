@@ -23,8 +23,10 @@ class ForgetPassControllerImpl extends ForgetPassController{
     update();
     var response=await checkEmailResetData.checkEmailData(emailController.text);
     statusRequest=handlingData(response);
+    print(statusRequest);
     if(StatusRequest.success==statusRequest)
       {
+        print(statusRequest);
         if(response['status']=='success'){
           toggleToVerifyCode();
 
@@ -33,7 +35,7 @@ class ForgetPassControllerImpl extends ForgetPassController{
         }
 
       }else{
-      defaultDialog("Error", statusRequest as String);
+      defaultDialog("Error", 'Try Again' );
 
     }
     update();

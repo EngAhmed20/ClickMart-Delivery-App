@@ -9,7 +9,7 @@ class CheckEmailResetData{
    var response=await crud.postData(AppLinks.checkEmailLink, {
      "email":email,
    });
-  return  response.fold((l)=>l,(r)=>r);
+  return response.fold((l)=>l,(r)=>r);
   }
 
 }

@@ -3,9 +3,9 @@ class AppLinks{
   static const String testLink="${serverLink}test.php";
   static const String loginLink="${serverLink}emp_auth/login.php";
   //======================forget pass==========================//
-  static const String checkEmailLink="${serverLink}delivery/emp_auth/forgetpassword/checkemail.php";
-  static const String verifyResetLink="${serverLink}delivery/emp_auth/forgetpassword/verifycode.php";
-  static const String resetPasswordLink="${serverLink}delivery/emp_auth/forgetpassword/resetpassword.php";
+  static const String checkEmailLink="${serverLink}emp_auth/forgetpassword/checkemail.php";
+  static const String verifyResetLink="${serverLink}emp_auth/forgetpassword/verifycode.php";
+  static const String resetPasswordLink="${serverLink}emp_auth/forgetpassword/resetpassword.php";
   //======================root_home==========================//
   static const String homeLink="${serverLink}root_home.php";
   static const String HomeOrders="${serverLink}delivery/orders/view.php";
